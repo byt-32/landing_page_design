@@ -155,7 +155,31 @@ h1,h2,h3,h4,h5,h6 {
 	.core-values .core-rows:nth-child(2n) > div:last-of-type {
 		order: initial;
 	}
+	.qa-sec {
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+	.qa-sec > div {
+		flex-direction: column;
+		text-align: center;
+	}
 	.footer-end {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-end > div {
+		text-align: center;
+		margin-top: .5rem;
+		width: 100% !important;
+	}
+}
+@media all and (max-width: 343px) {
+	.footer-form form {
+		flex-direction: column;
+		width: 100%;
+	}
+	.footer-form form button {
 		justify-content: center;
+		margin-top: .5rem
 	}
 }
