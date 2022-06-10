@@ -1,0 +1,18 @@
+{
+  "name": "landing_page_design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "bootstrap": "^5.1.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}
