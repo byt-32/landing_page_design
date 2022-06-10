@@ -48,6 +48,9 @@ h1,h2,h3,h4,h5,h6 {
 .secondary-color-bg {
 	background: #3722D3 !important;
 }
+.logo img {
+	/*width: 10%;*/
+}
 .hero {
 	background: linear-gradient(126deg, #4C38EE, rgb(76 56 238 / 30%));
 	padding-bottom: 6rem;
@@ -55,6 +58,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .navbar.resp-navbar {
 	display: none !important;
+}
+.navbar.resp-navbar .menu-block {
+	right: 0;
 }
 .banner-img img.img-fluid {
 	width: 80%
