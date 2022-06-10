@@ -7,36 +7,92 @@ html, body, div, button, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
 }
 
 @font-face {
-	font-family: Libre_Franklin;
-	src: url('./assets/fonts/Libre_Franklin/LibreFranklin-Regular.ttf');
+	font-family: Product-sans;
+	src: url('./assets/fonts/Product-sans/Product Sans Regular.ttf');
 }
 @font-face {
-	font-family: LibreFranklin-Bold;
-	src: url('./assets/fonts/Libre_Franklin/LibreFranklin-Bold.ttf');
+	font-family: Product-sans-Bold;
+	src: url('./assets/fonts/Product-sans/Product Sans Bold.ttf');
 }
-@font-face {
-	font-family: Quicksand;
-	src: url('./assets/fonts/Quicksand/Quicksand-Regular.ttf');
-}
+
 body {
-	font-family: Libre_Franklin , Roboto, helvetica !important;
+	/*font-family: Libre_Franklin , Roboto, helvetica !important;*/
 }
 a {
-	text-decoration: none;
-	color: inherit;
+	text-decoration: none !important;
+}
+li {
+	list-style: none !important;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: LibreFranklin-Bold !important;
+	/*font-family: Product-sans-Bold !important;*/
 }
-*::-webkit-scrollbar {
-	cursor: pointer;
-	width: 5px;
-	height: 5px;
-}
-*::-webkit-scrollbar-thumb {
-	background: #ababab;
-	border-radius: 10px;
-}
+
 .wrapper-head {
-	background: #4C38EE;
+	background: linear-gradient(180deg, #4C38EE 0%, #543DFF 100%);
+	height: 50px;
+}
+.side-pad {
+	padding-left: 5%;
+	padding-right: 5%
+}
+.primary-color-font {
+	color: #4C38EE !important;
+}
+.primary-color-bg {
+	background: #4C38EE !important;
+}
+.secondary-color-font {
+	color: #3722D3 !important;
+}
+.secondary-color-bg {
+	background: #3722D3 !important;
+}
+.hero {
+	background: linear-gradient(126deg, #4C38EE, rgb(76 56 238 / 30%));
+	padding-bottom: 4rem;
+	margin-bottom: 3rem;
+}
+.core-values {
+	margin-bottom: 4rem;
+}
+.core-header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.core-header::before {
+	position: absolute;
+	left: 0;
+	content: '';
+	z-index: -1;
+	width: 0;
+	height: 0;
+	border-top: 70px solid transparent;
+	border-left: 50px solid #6F68E833;
+	border-bottom: 70px solid transparent;
+}
+.core-rows {
+	margin-bottom: 5rem !important;
+}
+.qa-sec {
+	padding: 3.5% 10%;
+}
+.qa-sec > div > div:first-child {
+	flex: 7
+}
+.qa-sec > div > div:last-of-type {
+	flex-grow: 1;
+}
+.wrapper-footer {
+	padding-top: 3rem;
+	background: #F9FAFD;
+}
+.footer-form {
+	height: 65px;
+}
+
+.footer-end {
+	font-size: .9rem;
 }
