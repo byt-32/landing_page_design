@@ -59,6 +59,10 @@ h1,h2,h3,h4,h5,h6 {
 .navbar.resp-navbar {
 	display: none !important;
 }
+.resp-navbar button span {
+	width: 1.4rem;
+	height: 1.4rem;
+}
 .navbar.resp-navbar .menu-block {
 	right: 0;
 }
@@ -147,11 +151,15 @@ h1,h2,h3,h4,h5,h6 {
 	.banner-text {
 		text-align: center;
 	}
+
 	.core-rows .img-fluid {
 		max-width: 65%;
 	}
 }
 @media all and (max-width: 720px) {
+	.banner-text h1 {
+		font-size: 1.5rem;
+	}
 	.core-values .core-rows {
 		flex-direction: column;
 	}
