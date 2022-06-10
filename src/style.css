@@ -160,6 +160,9 @@ h1,h2,h3,h4,h5,h6 {
 	.banner-text h1 {
 		font-size: 1.5rem;
 	}
+	.banner-text br {
+		display: none;
+	}
 	.core-values .core-rows {
 		flex-direction: column;
 	}
