@@ -9,6 +9,7 @@
 	<title>OTIF</title>
 </head>
 <body>
+
 	<section class="wrapper container-xll">
 		<header class="wrapper-head d-flex flex-row justify-content-end">
 			<div class="d-flex flex-row align-items-center col-4 justify-content-evenly">
@@ -30,8 +31,8 @@
 		<section class="hero side-pad">
 			<header class="hero-header d-flex align-items-center">
 				<div class="logo col-2"> <img src="./assets/images/logo.svg" alt="logo"  width="125" height="125" /> </div>
-				<div class="hero-nav">
-					<nav class="navbar">
+				<div class="hero-nav col-10 d-flex">
+					<nav class="navbar main-navbar">
 						<ul class="d-flex justify-content-evenly">
 							<li class="nav-item dropdown">
 			          <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,6 +68,39 @@
 			        </li>
 						</ul>
 					</nav>
+					<nav class="navbar navbar-light resp-navbar me-3">
+					  <div class="position-relative d-flex flex-column align-items-center">
+					    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					      <span class="navbar-toggler-icon text-light"></span>
+					    </button>
+					    <div class="collapse position-absolute navbar-collapse text-center top-100 mt-3" id="navbarNavDropdown">
+					      <ul class="navbar-nav">
+					        <li class="nav-item mb-1 bg-light rounded-1 px-4">
+					          <a class="nav-link active" aria-current="page" href="#">Products</a>
+					        </li>
+					        <li class="nav-item mb-1 bg-light rounded-1 px-4">
+					          <a class="nav-link" href="#">Use cases</a>
+					        </li>
+					        <li class="nav-item mb-1 bg-light rounded-1 px-4">
+					          <a class="nav-link" href="#">Resources</a>
+					        </li>
+					        <li class="nav-item mb-1 bg-light rounded-1 px-4">
+					          <a class="nav-link" href="#">Company</a>
+					        </li>
+					        <!-- <li class="nav-item mb-1 bg-light rounded-1 px-4 dropdown position-relative">
+					          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					            Dropdown link
+					          </a>
+					          <ul class="dropdown-menu position-absolute top-100" aria-labelledby="navbarDropdownMenuLink">
+					            <li><a class="dropdown-item" href="#">Action</a></li>
+					            <li><a class="dropdown-item" href="#">Another action</a></li>
+					            <li><a class="dropdown-item" href="#">Something else here</a></li>
+					          </ul>
+					        </li> -->
+					      </ul>
+					    </div>
+					  </div>
+					</nav>
 				</div>
 			</header>
 			<div class="hero-content">
@@ -86,18 +120,16 @@
 							<a href="#" class="btn btn-light primary-color-font mt-4" role='button'>GET STARTED</a>
 						</div>
 					</div>
-					<div class="banner-img col">
-						
+					<div class="banner-img col d-flex justify-content-center align-items-center">
+						<img src="./assets/images/hero-img.png" class="img-fluid" alt="">
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="core-values container-xll"> 
 			<div class="row side-pad mx-0 core-rows">
-				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/fingerprint.svg" width="300" >
-				</div>
-				<div class="col mt-5 order-first">
+				
+				<div class="col mt-5">
 					<div class="core-header">
 						<h2 class="primary-color-font">Automation</h2> 
 					</div>
@@ -105,13 +137,14 @@
 						<p> We optimize and automate your entire shipping process. You do not have to look over your shoulder or facilitate any process in the course of shipping. </p>
 					</div>
 				</div>
+				<div class="col d-flex justify-content-center">
+					<img src="./assets/images/fingerprint.svg" width="300" class="img-fluid">
+				</div>
 				
 			</div>
 
 			<div class="row side-pad mx-0 core-rows">
-				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/amico.svg" width="300" >
-				</div>
+				
 				<div class="col mt-5">
 					<div class="core-header">
 						<h2 class="primary-color-font">Volume</h2> 
@@ -120,14 +153,15 @@
 						<p> Regardless of the size, big or very small, of whatever you are shipping, be it a a small taco, some packages or an entire stand we make sure it gets there on time and in full. </p>
 					</div>
 				</div>
+				<div class="col d-flex justify-content-center">
+					<img src="./assets/images/amico.svg" width="300" class='img-fluid'>
+				</div>
 				
 			</div>
 
 			<div class="row side-pad mx-0 core-rows">
-				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/paper-map.svg" width="300" >
-				</div>
-				<div class="col mt-5 order-first">
+				
+				<div class="col mt-5">
 					<div class="core-header">
 						<h2 class="primary-color-font">Seamless navigation</h2> 
 					</div>
@@ -135,13 +169,14 @@
 						<p> We service all route and handle all types of navigation, inbound or outbound. Our carriers are sufficent for efficient servicing of the entire globe. </p>
 					</div>
 				</div>
+				<div class="col d-flex justify-content-center">
+					<img src="./assets/images/paper-map.svg" width="300" class='img-fluid'>
+				</div>
 				
 			</div>
 
 			<div class="row side-pad mx-0 core-rows">
-				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/company.svg" width="300" >
-				</div>
+				
 				<div class="col mt-5">
 					<div class="core-header">
 						<h2 class="primary-color-font">Multiple business model</h2> 
@@ -149,6 +184,9 @@
 					<div class="ms-2">
 						<p> We have prepared packages for all types of busines model; business to business, business to consumer, and consumer to business. We will handle your package either way. </p>
 					</div>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<img src="./assets/images/company.svg" width="300" class='img-fluid'>
 				</div>
 				
 			</div>
@@ -198,16 +236,14 @@
 						<h6 class="primary-color-font mb-3"> International shipping </h6>
 						<div class="">
 							<ul class="ps-0 mb-0">
-								<li> <a href="#" class="text-dark"> Terms and Conditions</a> </li>
-								<li> <a href="#" class="text-dark"> Companies</a> </li>
-								<li> <a href="#" class="text-dark"> Qouting</a> </li>
-								<li> <a href="#" class="text-dark"> Security</a> </li>
-								<li> <a href="#" class="text-dark"> Why OTIF?</a> </li>
+								<li> <a href="#" class="text-dark"> International Deliveries</a> </li>
+								<li> <a href="#" class="text-dark"> Shipping Monterry</a> </li>
+								<li> <a href="#" class="text-dark"> Secure Shipments</a> </li>
 							</ul>
 						</div>
 					</div>
 					<div class="col d-flex flex-column align-items-start">
-						<h6 class="primary-color-font mb-3"> Products </h6>
+						<h6 class="primary-color-font mb-3"> Parcels </h6>
 						<div class="">
 							<ul class="ps-0 mb-0">
 								<li> <a href="#" class="text-dark"> Terms and Conditions</a> </li>
@@ -218,14 +254,12 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-3 d-flex flex-column align-items-start">
+					<div class="col-3 d-flex flex-column align-items-start footer-form">
 						<h6 class="primary-color-font mb-3"> Subscribe to our newsletter </h6>
-						<div class="">
-							<form class="d-flex footer-form" method="post">
-								<input type="email" required name="mail" class="rounded-0 outline-0 border-0 px-1" placeholder="Enter your email">
-								<button type="submit" class="secondary-color-bg rounded-0 px-2 text-light">Subscribe</button>
-							</form>
-						</div>
+						<form class="d-flex mt-1" method="post">
+							<input type="email" required name="mail" class="rounded-0 outline-0 border-0 px-1 py-3" placeholder="Enter your email">
+							<button type="submit" class="secondary-color-bg rounded-0 px-2 text-light py-3 d-flex align-items-center">Subscribe</button>
+						</form>
 					</div>
 				</div>
 			</div>
