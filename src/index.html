@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="./assets/bootsrap.min.css">
+   <link rel="stylesheet" href="./assets/animate.min.css">
    <link rel="icon" type="image/x-icon" href="./assets/images/logo-blue.svg">
 	<title>OTIF</title>
 </head>
@@ -29,7 +30,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="hero side-pad">
+		<section class="hero side-pad animate__animated animate__fadeIn">
 			<header class="hero-header d-flex align-items-center">
 				<div class="logo col-2"> <img src="./assets/images/logo.svg" alt="logo" width="90" height="125" /> </div>
 				<div class="hero-nav col-10 d-flex">
@@ -106,7 +107,7 @@
 			</header>
 			<div class="hero-content">
 				<div class="logo ms-3 mt-3 ">
-					<img src="./assets/images/express-shipping.svg" width="150">
+					<img src="./assets/images/express-shipping.svg" width="150" alt="express shipping logo">
 				</div>
 				<div class="hero-banner d-flex align-items-center mt-4">
 					<div class="banner-text col">
@@ -118,16 +119,16 @@
 								We bring together all the express shipping companies.<br>
 								OTF facilitates logistics for your company, either brick, <br> mortar or your ecommerce store.
 							</p>
-							<a href="#" class="btn btn-light primary-color-font mt-4" role='button'>GET STARTED</a>
+							<a href="#" class="btn btn-light primary-color-font mt-4 animate__animated animate__bounceIn animate__delay-2s" role='button'>GET STARTED</a>
 						</div>
 					</div>
-					<div class="banner-img col d-flex justify-content-center align-items-center">
-						<img src="./assets/images/hero-img.png" class="img-fluid" alt="">
+					<div class="banner-img col d-flex justify-content-center align-items-center animate__animated animate__fadeIn animate__delay-1s">
+						<img src="./assets/images/hero-img.png" class="img-fluid" alt="banner image">
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="core-values container-xll"> 
+		<section class="core-values container-xll" id="showOnScroll"> 
 			<div class="row side-pad mx-0 core-rows">
 				
 				<div class="col mt-5">
@@ -139,7 +140,7 @@
 					</div>
 				</div>
 				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/fingerprint.svg" width="300" class="img-fluid">
+					<img src="./assets/images/fingerprint.svg" width="300" alt="fingerprint image" class="img-fluid">
 				</div>
 				
 			</div>
@@ -155,7 +156,7 @@
 					</div>
 				</div>
 				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/amico.svg" width="300" class='img-fluid'>
+					<img src="./assets/images/amico.svg" alt="amico images" width="300" class='img-fluid'>
 				</div>
 				
 			</div>
@@ -171,7 +172,7 @@
 					</div>
 				</div>
 				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/paper-map.svg" width="300" class='img-fluid'>
+					<img src="./assets/images/paper-map.svg" width="300" alt="papper map" class='img-fluid'>
 				</div>
 				
 			</div>
@@ -187,7 +188,7 @@
 					</div>
 				</div>
 				<div class="col d-flex justify-content-center">
-					<img src="./assets/images/company.svg" width="300" class='img-fluid'>
+					<img src="./assets/images/company.svg" width="300" alt="image depicting workflow in a company" class='img-fluid'>
 				</div>
 				
 			</div>
@@ -285,6 +286,7 @@
 
 	</section>
 
+	<script type="text/javascript" src="./assets/script/script.js"></script>
 	<script type="text/javascript" src="./assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>

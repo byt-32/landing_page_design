@@ -75,6 +75,9 @@ h1,h2,h3,h4,h5,h6 {
 .core-values .core-rows:nth-child(2n) > div:last-of-type {
 	order: -1;
 }
+.core-values > div {
+	transition: 1s ease opacity, visibility;
+}
 .core-header {
 	position: relative;
 	display: flex;
