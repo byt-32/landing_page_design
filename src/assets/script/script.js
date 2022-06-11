@@ -5,7 +5,6 @@
 	window.addEventListener('DOMContentLoaded', (e) => {
 		window.IntersectionObserver !== undefined && assignIntialProps()
 	})
-	// window.addEventListener('scroll', showElements)
 
 	function assignIntialProps() {
 		const observer = new IntersectionObserver(showElements,
