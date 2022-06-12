@@ -25,33 +25,7 @@
 			if (observed.isIntersecting) {
 				observed.target.style.visibility = 'visible'
 				observed.target.style.opacity = '1'
-				// console.log(observed)
-				if (window.innerWidth <= 720) {
-					if (observed.target === elementsToObserve[elementsToObserve.length -1]) {
-						assignClassnames(observed.target, ['animate__animated', 'animate__fadeInUp'])
-					} else {
-						assignClassnames(observed.target.querySelector(':first-child'), ['animate__animated',
-						 'animate__lightSpeedInLeft'])
-						assignClassnames(observed.target.querySelector(':first-child').nextElementSibling,
-						 ['animate__animated', 'animate__lightSpeedInRight'])
-					}
-				} else {
-					if (observed.target === elementsToObserve[0] || observed.target === elementsToObserve[2])  {
-						assignClassnames(observed.target.querySelector(':first-child'),
-						 ['animate__animated', 'animate__lightSpeedInLeft'])
-						assignClassnames(observed.target.querySelector(':first-child').nextElementSibling,
-						 ['animate__animated', 'animate__lightSpeedInRight'])
-					} else if (observed.target === elementsToObserve[1] || observed.target === elementsToObserve[3]) {
-						assignClassnames(observed.target.querySelector(':first-child'),
-						 ['animate__animated', 'animate__lightSpeedInRight'])
-						assignClassnames(observed.target.querySelector(':first-child').nextElementSibling,
-						 ['animate__animated', 'animate__lightSpeedInLeft'])
-					} else {
-						assignClassnames(observed.target, ['animate__animated', 'animate__fadeInUp'])
-					}
-				}
-
-				
+				assignClassnames(observed.target, ['animate__animated', 'animate__fadeInUp'])
 			}
 		})
 	}
